@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Setting Text Content</h1>
+
+<h2 id="01">Hello World!</h2>
+<h2 id="02">Hello Sweden!</h2>
+
+<script>
+$(document).ready(function() {
+  var myElement = $("#01");
+  myElement.text("바보!");
+
+  //var my2 = document.getElementById("02");
+  //my2.textContent = "바보2!";
+  //document.getElementById("02").textContent = "바보3!";
+  //var my3 = $("#02");
+  //my3.text("바보4!!");
+  
+  var my4 = document.getElementById("02");
+  my4.innerText = "<i>바보5</i>";
+});
+</script>
+
+</body>
+</html>
